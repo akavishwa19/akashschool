@@ -1,0 +1,48 @@
+.heading {
+    text-align: center;
+    padding: 10px;
+}
+
+.image {
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.maincontent {
+    font-size: 23px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.content {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.everything{
+    padding-bottom: 30px;
+}
+.image,
+.content {
+    width: 100%;
+}
+
+.image {
+    animation: right_to_left 2s ease;
+}
+
+
+
+@keyframes right_to_left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}

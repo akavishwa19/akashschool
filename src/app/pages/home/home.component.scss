@@ -1,0 +1,40 @@
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: 0.5s;
+}
+
+.lighten-1 {
+    background: #ffffff;
+    box-shadow: -5px 2px 12px #cdcdcd, inset -6px -6px 12px #f6f6f6;
+    border-radius: 28px;
+    border: white;
+    padding-top: 27px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    margin: 20px;
+    min-width: 162px;
+    min-height: 400px !important;
+}
+
+.imageiconless {
+    width: 90px;
+    padding-bottom: 10px;
+}
+
+.protienone {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.bg-topper {
+    background-color: #000000;
+}

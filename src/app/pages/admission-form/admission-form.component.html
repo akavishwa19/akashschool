@@ -1,0 +1,139 @@
+<app-header></app-header>
+
+<div class="container">
+  <h2>ADMISSION FORM</h2>
+  <br />
+  <b>Admission Registration Form for Class Nur to IX and XI is live now..</b
+  ><br />
+  Important instructions for filling up of Registration form.<br />
+  1. Form must be filled up in capital letter only.<br />
+  2. Pay fee online of Rs. 500/- after submitting the form.<br />
+  3. If fee is not paid then form will not be counted as submitted
+  successfully.<br />
+  4. After successfully submission of form candidate must be present on the
+  entrance examination date before 09:00 am.<br />
+  5. For any query regarding form fill-up & online payment then contact +91
+  99313 53200<br />
+  <hr />
+
+  <div class="form">
+    <div class="formedit">
+      <form [formGroup]="reactiveform" (ngSubmit)="onSubmit()">
+        <label for="class">Class applied for</label>
+        <select id="class" formControlName="country">
+          <option value="NUR">NUR</option>
+          <option value="LKG">LKG</option>
+          <option value="UKG">UKG</option>
+          <option value="I">I</option>
+          <option value="II">II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+          <option value="VI">VI</option>
+          <option value="VII">VII</option>
+          <option value="VIII">VIII</option>
+          <option value="IX">IX</option>
+          <option value="XI">XI</option>
+        </select>
+
+        <label for="name">Name of the student</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="name..."
+          formControlName="name"
+        />
+
+        <label for="fname">Father's name</label>
+        <input
+          type="text"
+          id="fname"
+          placeholder="father's name..."
+          formControlName="fname"
+        />
+
+        <label for="mname">Mother's name</label>
+        <input
+          type="text"
+          id="mname"
+          placeholder="your last name..."
+          formControlName="mname"
+        />
+
+        <label for="dob">Date of birth</label>
+        <input
+          type="date"
+          id="dob"
+          placeholder="your dob..."
+          formControlName="dob"
+        />
+
+        <label for="address">Address</label>
+        <input
+          type="text"
+          id="address"
+          placeholder="your Address..."
+          formControlName="address"
+        />
+        <label for="whatsapp">Whatsapp No.</label>
+        <input
+          type="number"
+          id="whatsapp"
+          placeholder="your number..."
+          formControlName="whatsapp"
+        />
+
+        <label for="mobile">Mobile No.</label>
+        <input
+          type="number"
+          id="mobile"
+          placeholder="your number..."
+          formControlName="mobile"
+        />
+
+        <label for="mail">Email</label>
+        <input
+          type="text"
+          id="mail"
+          placeholder="your email..."
+          formControlName="email"
+        />
+        <span
+          *ngIf="
+            !reactiveform.get('mail').valid && reactiveform.get('mail').touched
+          "
+          >email you entered is incorrect</span
+        >
+
+        <label for="photo">Upload photograph (< 500 KB)</label>
+        <input
+          type="file"
+          id="photo"
+          placeholder="your email..."
+          formControlName="photo"
+        />
+
+        <label for="tc">Upload TC/ SLC (Previous School) (< 500 KB)</label>
+        <input
+          type="file"
+          id="tc"
+          placeholder="your email..."
+          formControlName="tc"
+        />
+
+        <input type="checkbox" />
+        <label
+          ><b>Decleration</b> I hearby declear that all the information
+          furnished above are true to my knowledge. I also understand that if
+          any information is found to be wrong or not true then action can be
+          taken against me in future.</label
+        >
+
+        <button class="btn btn-danger">submit</button>
+      </form>
+    </div>
+  </div>
+  <div style="height: 50px" class="gap"></div>
+</div>
+
+<app-footer></app-footer>
